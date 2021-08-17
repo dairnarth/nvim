@@ -9,9 +9,16 @@ nnoremap <s-tab> zA
 " Disabled Mappings
 nnoremap K <Nop>
 nnoremap Q <Nop>
+nnoremap s <Nop>
+nnoremap S <Nop>
+
+" Easy Saving
+nnoremap ss :w<CR>
+nnoremap sa :w <C-r>%
+nnoremap so :w \| source % \| echo 'Sourced'expand("%")<CR>
 
 " wincmd bindings
-nnoremap <C-h> :wincmd h<CR>
-nnoremap <C-j> :wincmd j<CR>
-nnoremap <C-k> :wincmd k<CR>
-nnoremap <C-l> :wincmd l<CR>
+nnoremap <silent> <C-h> :wincmd h<CR>
+nnoremap <silent> <C-j> :wincmd j<CR>
+nnoremap <silent> <C-k> :wincmd k<CR>
+nnoremap <silent> <C-l> :wincmd l<CR>
